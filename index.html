@@ -1,16 +1,25 @@
 <html>
 <body>
+<meta charset="utf-8">
 
 <h2>HTML Forms</h2>
 <p> 사용자 정보 입력 </p>
 
 <form action = "form_ok.php" method = "post">
+    <p>Choose your favorite Web language( only html right now ):</p>
 
-    <lebel for = "uname"> 이름 : </lebel><br>
-    <input type = "text" id = "uname" name = "uname" placeholder = "이름을 입력 : "><br>
 
-    <label for = "email">이메일 : </label><br>
-    <input type = "text" id = "email" placeholder = "이메일을 입력 : "><br><br>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+
+    <lebel for = "uname"> 아이디 : </lebel><br>
+    <input type = "text" id = "uname" name = "uname" placeholder = "아이디를 입력 : "><br>
+
+    <label for = "email">비밀번호 : </label><br>
+    <input type = "text" id = "email" placeholder = "비밀번호를 입력 : "><br><br>
+
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> 비밀 번호 저장 </label><br>
 
     <input type = "submit" value = "Submit">
 
